@@ -29,4 +29,8 @@ class ProductController extends Controller
     {
         return view('Program');
     }
+    public function artikel()
+    {
+        return view('artikel');
+    }
 }
