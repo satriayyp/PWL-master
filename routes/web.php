@@ -6,6 +6,9 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\productController;
 use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\HobiController;
+use App\Http\Controllers\KeluargaController;
+use App\Http\Controllers\MatkulController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,5 +40,8 @@ Route::get('/product',[productController::class,'Product']);
 Route::get('/about-us',[productController::class,'about']);
 Route::get('/news',[productController::class,'news']);
 Route::get('/program',[productController::class,'program']);
-Route::get('/dashboard',[productController::class,'dasboard']);
+Route::get('/dashboard',[productController::class,'dashboard']);
 Route::get('/Artikel',[ArtikelController::class,'index']);
+Route::get('/Hobi',[HobiController::class,'index']);
+Route::get('/Keluarga',[KeluargaController::class,'index']);
+Route::get('/Matkul',[MatkulController::class,'index']);

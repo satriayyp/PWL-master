@@ -30,19 +30,19 @@
                 <li class="nav-item">
                     <a href="{{ url('/dashboard') }}" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-ellipsis-h"></i>
-                        <p>Dashboard</p>
+                        <p>Data hobi</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ url('/profile') }}" class="nav-link {{ request()->is('profile') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-ellipsis-h"></i>
-                        <p>Profile</p>
+                        <p>Data keluarga</p>
                     </a>
                 </li>
                 <li class="nav-item">
                   <a href="{{ url('/pengalaman-kuliah') }}" class="nav-link  {{ request()->is('pengalaman-kuliah') ? 'active' : '' }}">
                       <i class="nav-icon fas fa-ellipsis-h"></i>
-                      <p>Pengalaman Kuliah</p>
+                      <p>Data mata kuliah</p>
                   </a>
               </li>
                
