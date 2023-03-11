@@ -29,6 +29,10 @@ class ProductController extends Controller
     {
         return view('Program');
     }
+    public function dashboard()
+    {
+        return view('dashboard');
+    }
   //  public function artikel()
     //{
       //  return view('artikel');

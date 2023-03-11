@@ -37,5 +37,5 @@ Route::get('/product',[productController::class,'Product']);
 Route::get('/about-us',[productController::class,'about']);
 Route::get('/news',[productController::class,'news']);
 Route::get('/program',[productController::class,'program']);
-//Route::get('/artikel',[productController::class,'artikel']);
+Route::get('/dashboard',[productController::class,'dasboard']);
 Route::get('/Artikel',[ArtikelController::class,'index']);
