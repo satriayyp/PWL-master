@@ -28,19 +28,19 @@
                 
                 <li class="nav-header">MENU</li>
                 <li class="nav-item">
-                    <a href="{{ url('/dashboard') }}" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
+                    <a href="{{ url('/Hobi') }}" class="nav-link {{ request()->is('Hobi') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-ellipsis-h"></i>
                         <p>Data hobi</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url('/profile') }}" class="nav-link {{ request()->is('profile') ? 'active' : '' }}">
+                    <a href="{{ url('/Keluarga') }}" class="nav-link {{ request()->is('Keluarga') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-ellipsis-h"></i>
                         <p>Data keluarga</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                  <a href="{{ url('/pengalaman-kuliah') }}" class="nav-link  {{ request()->is('pengalaman-kuliah') ? 'active' : '' }}">
+                  <a href="{{ url('/Matkul') }}" class="nav-link  {{ request()->is('Matkul') ? 'active' : '' }}">
                       <i class="nav-icon fas fa-ellipsis-h"></i>
                       <p>Data mata kuliah</p>
                   </a>
