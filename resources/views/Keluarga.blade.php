@@ -49,7 +49,7 @@
                       <th>ID</th>
                       <th>nama</th>
                       <th>status</th>
-                      <th>NIK</th>
+                      
                     </tr>
                   </thead>
                   <tbody>
@@ -58,7 +58,7 @@
                         <td>{{$b->id}}</td>
                         <td>{{$b->nama}}</td>
                         <td>{{$b->status}}</td>
-                        <td>{{$b->NIK}}</td>
+                        
                       </tr>
 
                   @endforeach

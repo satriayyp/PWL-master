@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama',40);
             $table->string('status',40);
-            $table->integer('NIK');
+          
         });
     }
 
