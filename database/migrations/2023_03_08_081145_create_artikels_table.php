@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('artikels', function (Blueprint $table) {
+        Schema::create('artikel', function (Blueprint $table) {
             $table->id();
             $table->string('judul',40);
             $table->string('penulis',40);
             $table->integer('tahun');
-            $table->timestamps();
+          
         });
     }
 
