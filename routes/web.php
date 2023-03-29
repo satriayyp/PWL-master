@@ -33,15 +33,22 @@ Route::get('/about',function(){
 //Route::get('/article/{id}',function($id){
   //  echo"selamat datang di ID=$id ";
 //});
-Route::get('/',[HomeController::class,'index']);
-Route::get('/about',[PageController::class,'about']);
-Route::get('/article/{id}',[ArticleController::class,'article']);
-Route::get('/product',[productController::class,'Product']);
-Route::get('/about-us',[productController::class,'about']);
-Route::get('/news',[productController::class,'news']);
-Route::get('/program',[productController::class,'program']);
-Route::get('/dashboard',[productController::class,'dashboard']);
-Route::get('/Artikel',[ArtikelController::class,'index']);
-Route::get('/Hobi',[HobiController::class,'index']);
-Route::get('/Keluarga',[KeluargaController::class,'index']);
-Route::get('/Matkul',[MatkulController::class,'index']);
+
+Auth::routes();
+Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout']);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::middleware('auth')->group(function ()
+{
+    Route::get('/',[HomeController::class,'index']);
+    Route::get('/about',[PageController::class,'about']);
+    Route::get('/article/{id}',[ArticleController::class,'article']);
+    Route::get('/product',[productController::class,'Product']);
+    Route::get('/about-us',[productController::class,'about']);
+    Route::get('/news',[productController::class,'news']);
+    Route::get('/program',[productController::class,'program']);
+    Route::get('/dashboard',[productController::class,'dashboard']);
+    Route::get('/Artikel',[ArtikelController::class,'index']);
+    Route::get('/Hobi',[HobiController::class,'index']);
+    Route::get('/Keluarga',[KeluargaController::class,'index']);
+    Route::get('/Matkul',[MatkulController::class,'index']); 
+});
