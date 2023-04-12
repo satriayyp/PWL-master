@@ -45,6 +45,14 @@
                       <p>Data mata kuliah</p>
                   </a>
               </li>
+              <li class="nav-item">
+                <a href ={{url('mahasiswa')}} class="nav-link">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Mahasiswa 
+                        </p>
+                </a>
+              </li>
                
             </ul>
         </nav>

@@ -9,6 +9,9 @@ use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\HobiController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\MatkulController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\MahasiswaModelController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,4 +54,5 @@ Route::middleware('auth')->group(function ()
     Route::get('/Hobi',[HobiController::class,'index']);
     Route::get('/Keluarga',[KeluargaController::class,'index']);
     Route::get('/Matkul',[MatkulController::class,'index']); 
+    Route::resource('/mahasiswa',MahasiswaModelController::class);
 });
