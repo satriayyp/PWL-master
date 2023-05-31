@@ -14,7 +14,9 @@ class MahasiswaModelController extends Controller
      */
     public function index()
     {
-        //
+        $mahasiswa=MahasiswaModel::all();
+        return view('mahasiswa')
+        ->with('mhs',$mahasiswa);
     }
 
     /**
